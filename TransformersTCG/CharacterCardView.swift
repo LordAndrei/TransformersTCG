@@ -17,6 +17,32 @@ class CharacterCardView: UIView {
     @IBOutlet var attackPower: UILabel!
     @IBOutlet var health: UILabel!
     @IBOutlet var defencePower: UILabel!
+    
+    var characterCard: CharacterCard!
+    
+    override func awakeFromNib() {
+      print("CharacterCardView awakeFromNib")
+      self.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+      self.layer.borderWidth = 1.0
+      self.layer.cornerRadius = 5.0
+    }
+    
+    func setCharacterCard(card: CharacterCard) {
+      characterCard = card
+      name.text = card.name.uppercased()
+      discription.text = card.description.uppercased()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
