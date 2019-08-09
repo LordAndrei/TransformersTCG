@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CharacterCardView" customModule="TransformersTCG" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="905" height="1277"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -175,10 +175,38 @@ MODE</string>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2B-zJ-ktV">
+                    <rect key="frame" x="67" y="164" width="178" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFi-aV-ZfL">
+                            <rect key="frame" x="18" y="8" width="65" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCA-vD-Rpm">
+                    <rect key="frame" x="3" y="164" width="67" height="53"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="attackPower" destination="dPX-Ih-44D" id="Aod-O2-uUW"/>
+                <outlet property="defencePower" destination="nhY-3c-W16" id="eQ9-TD-Ocf"/>
+                <outlet property="discription" destination="dM3-yU-I3L" id="FWD-fe-s8Y"/>
+                <outlet property="health" destination="XHK-ar-A67" id="uV9-Mu-UcO"/>
+                <outlet property="mode" destination="6X5-Sx-suL" id="TBS-gu-uQM"/>
+                <outlet property="name" destination="tVS-dZ-dlb" id="7qW-EZ-7wd"/>
+                <outlet property="otherMode" destination="ZHG-sr-YhJ" id="6vu-fH-5U7"/>
+            </connections>
             <point key="canvasLocation" x="493.47826086956525" y="235.37946428571428"/>
         </view>
     </objects>
