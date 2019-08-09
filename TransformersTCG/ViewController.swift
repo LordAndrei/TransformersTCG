@@ -12,7 +12,7 @@ class ViewController: UIViewController {
   
   @IBOutlet var card1: UIView!
   
-  let nib = UINib(nibName: "CharacterCard", bundle: nil)
+  let nib = UINib(nibName: "CharacterCardView", bundle: nil)
 
   override func viewDidLoad() {
     super.viewDidLoad()
