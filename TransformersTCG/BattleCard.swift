@@ -14,6 +14,7 @@ enum BattlePointType {
   case blue
   case white
   case green
+  case black
   case none
 }
 
