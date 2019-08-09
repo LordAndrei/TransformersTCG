@@ -24,6 +24,29 @@ class BattlePointView: UIView {
     guard card != nil else {
       return
     }
+    
+    let width = rect.width * 0.95
+    let height = rect.height / 3.0
+    
+    switch card!.battlePointType {
+    case .black:
+      UIColor.black.setFill()
+    case .blue:
+      #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).setFill()
+    case .green:
+      UIColor.green.setFill()
+    case .orange:
+      UIColor.orange.setFill()
+    case .white:
+      UIColor.white.setFill()
+    default:
+      return
+    }
+    
+    let drawRect = CGRect(x: rect.width * 0.025, y: 0.0, width: width, height: height)
+    let bezierRect = UIBezierPath(roundedRect: drawRect, cornerRadius: 3.0)
+    bezierRect.fill()
+    
       // Drawing code
   }
 

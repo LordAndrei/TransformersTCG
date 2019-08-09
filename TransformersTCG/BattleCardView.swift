@@ -25,6 +25,7 @@ class BattleCardView: UIView {
   
   func setBattleCard(card: BattleCard) {
     battleCard = card
+    battlePointView.setBattleCard(card: card)
     name.text = card.name.uppercased()
     if card.cardClass == BattleCardClass.action {
       labelBackground.backgroundColor = #colorLiteral(red: 0.8465057791, green: 0.8465057791, blue: 0.8465057791, alpha: 1)
