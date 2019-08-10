@@ -26,7 +26,7 @@ class BattlePointView: UIView {
     }
     
     let width = rect.width * 0.95
-    let height = rect.height / 3.0
+    let height = (rect.height / 3.0) * 0.90
     
     switch card!.battlePointType {
     case .black:
@@ -42,11 +42,18 @@ class BattlePointView: UIView {
     default:
       return
     }
+    var y: CGFloat = 0.0
+    for count in 1...card!.battlePointCount {
+        y += (rect.height / 3.0) * 0.05
+        if count > 1 {
+            y += (rect.height / 3.0) * 0.95
+        }
+        let drawRect = CGRect(x: rect.width * 0.025, y: y, width: width, height: height)
+        let bezierRect = UIBezierPath(roundedRect: drawRect, cornerRadius: 3.0)
+        bezierRect.fill()
+    }
     
-    let drawRect = CGRect(x: rect.width * 0.025, y: 0.0, width: width, height: height)
-    let bezierRect = UIBezierPath(roundedRect: drawRect, cornerRadius: 3.0)
-    bezierRect.fill()
-    
+
       // Drawing code
   }
 
