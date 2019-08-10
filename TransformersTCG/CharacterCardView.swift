@@ -19,6 +19,7 @@ class CharacterCardView: UIView {
     @IBOutlet var defencePower: UILabel!
     
     var characterCard: CharacterCard!
+    var activeMode: CharacterModes = .altMode
     
     override func awakeFromNib() {
       print("CharacterCardView awakeFromNib")
@@ -31,8 +32,14 @@ class CharacterCardView: UIView {
       characterCard = card
       name.text = card.name.uppercased()
       discription.text = card.description.uppercased()
+        updateUI()
     }
-    
+    func updateUI() {
+        mode.text = activeMode.rawValue
+        attackPower.text = "\(characterCard.stats[activeMode]!.attack)"
+        health.text = "\(characterCard.stats[activeMode]!.health)"
+        defencePower.text = "\(characterCard.stats[activeMode]!.defence)"
+    }
     
     
     

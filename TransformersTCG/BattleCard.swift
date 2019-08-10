@@ -18,11 +18,12 @@ enum BattlePointType {
   case none
 }
 
-enum BattleCardClass {
-  case action
-  case upgradeWeapon
-  case upgradeUtility
-  case upgradeArmor
+enum BattleCardClass: String {
+  case action = "Action"
+  case actionSecret = "Secret Action"
+  case upgradeWeapon = "Upgrade-Weapon"
+  case upgradeUtility = "Upgrade-Utility"
+  case upgradeArmor = "Upgrade-Armor"
 }
 
 struct BattleCard {

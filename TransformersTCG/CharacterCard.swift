@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-enum CharacterModes: Int {
-  case botMode = 0
-  case altMode = 1
-  case combinerMode = 2
+enum CharacterModes: String {
+  case botMode = "Bot Mode"
+  case altMode = "Alt Mode"
+  case combinerMode = "Combiner Mode"
 }
 
 enum CharacterTeam {
