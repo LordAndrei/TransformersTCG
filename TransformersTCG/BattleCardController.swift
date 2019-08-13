@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BattleCardController: UIViewController {
   
   @IBOutlet var card1: UIView!
   @IBOutlet var card2: UIView!
