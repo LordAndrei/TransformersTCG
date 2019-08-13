@@ -22,6 +22,7 @@
 		58C8F17C22FDEBDC00081362 /* NibLoadedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C8F17B22FDEBDC00081362 /* NibLoadedView.swift */; };
 		58C8F17E22FF8D3D00081362 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C8F17D22FF8D3D00081362 /* MainViewController.swift */; };
 		58C8F180230093E100081362 /* CharacterCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C8F17F230093E100081362 /* CharacterCardViewController.swift */; };
+		DF40E5E62303071B004F4099 /* GamePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40E5E52303071B004F4099 /* GamePlay.swift */; };
 		DFB3ED7522FDE00200F056C8 /* CharacterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB3ED7422FDE00200F056C8 /* CharacterCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		58C8F17B22FDEBDC00081362 /* NibLoadedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadedView.swift; sourceTree = "<group>"; };
 		58C8F17D22FF8D3D00081362 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		58C8F17F230093E100081362 /* CharacterCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCardViewController.swift; sourceTree = "<group>"; };
+		DF40E5E52303071B004F4099 /* GamePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlay.swift; sourceTree = "<group>"; };
 		DFB3ED7422FDE00200F056C8 /* CharacterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				58C8F17822FCE80700081362 /* TransformersTCG.entitlements */,
+				DF40E5E52303071B004F4099 /* GamePlay.swift */,
 				58C8F16E22FC942A00081362 /* CharacterCard.swift */,
 				58C8F17022FC9C8400081362 /* BattleCard.swift */,
 				58C8F17222FCA4AD00081362 /* BattleCardView.xib */,
@@ -177,6 +180,7 @@
 				58C8F180230093E100081362 /* CharacterCardViewController.swift in Sources */,
 				58C8F17722FCA6E600081362 /* BattlePointView.swift in Sources */,
 				58C8F15B22FC93BA00081362 /* AppDelegate.swift in Sources */,
+				DF40E5E62303071B004F4099 /* GamePlay.swift in Sources */,
 				DFB3ED7522FDE00200F056C8 /* CharacterCardView.swift in Sources */,
 				58C8F15D22FC93BA00081362 /* SceneDelegate.swift in Sources */,
 				58C8F17C22FDEBDC00081362 /* NibLoadedView.swift in Sources */,

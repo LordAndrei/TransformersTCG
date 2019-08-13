@@ -82,3 +82,14 @@ let rtt04 = CharacterCard(name: "Red Alert",
                           team: .autobot)
 
 let characters = [rtt01, rtt02, rtt03, rtt04]
+
+extension CharacterCard: Hashable {
+    static func == (lhs: CharacterCard, rhs: CharacterCard) -> Bool {
+        return lhs.name == rhs.name
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        
+    }
+    
+}
