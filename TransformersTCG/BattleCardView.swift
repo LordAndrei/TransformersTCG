@@ -17,7 +17,6 @@ class BattleCardView: UIView {
   var battleCard: BattleCard!
   
   override func awakeFromNib() {
-    print("BattleCardView awakeFromNib")
     self.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     self.layer.borderWidth = 1.0
     self.layer.cornerRadius = 5.0
