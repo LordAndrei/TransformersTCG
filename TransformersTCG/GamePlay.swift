@@ -37,12 +37,20 @@ class GamePlay {
     
     func dealCharacterCards() {
         for playerIndex in 1...2 {
+            print("Dealing Cards for Player: \(playerIndex)")
             var setOfCharacterCards: Set<CharacterCard> = []
             while setOfCharacterCards.count < 2 {
                 let characterCardIndex = Int.random(in: 0...3)
                 let card = characters[characterCardIndex]
                 setOfCharacterCards.insert(card)
             }
+            print("Cards: ")
+            var starCountTotal = 0
+            for card in setOfCharacterCards {
+                print("Name: \(card.name)")
+                starCountTotal += card.starCount
+            }
+            print("Total Star Count: \(starCountTotal)")
         }
     }
     
