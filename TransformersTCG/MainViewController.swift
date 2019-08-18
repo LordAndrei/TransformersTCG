@@ -20,6 +20,9 @@ class MainViewController: UIViewController {
     
   }
 
+    @IBAction func hitDealCharacterCards(_ sender: Any) {
+        GamePlay().dealCharacterCards()
+    }
     /*
     // MARK: - Navigation
 
