@@ -9,6 +9,19 @@
 import Foundation
 import UIKit
 
+
+enum CharacterCardType: String {
+    case combined = "Combined"
+    case titan = "Titan"
+    case classic = "Regular"
+    case cassette = "Cassette"
+    case microBots = "Mini"
+    case combiners = "Combiner"
+}
+
+
+
+
 enum CharacterModes: String {
   case botMode = "Bot Mode"
   case altMode = "Alt Mode"
@@ -29,6 +42,8 @@ struct CharacterCard {
   var classes: [CharacterModes: [String]]
   var starCount: Int
   var team: CharacterTeam
+  var type: CharacterCardType
+    
 }
 
 struct CharacterStats {
@@ -46,7 +61,8 @@ let rtt01 = CharacterCard(name: "Bumblebee",
                           classes: [.botMode: ["Leader", "Melee"],
                                     .altMode: ["Leader", "Car", "Melee"]],
                           starCount: 6,
-                          team: .autobot)
+                          team: .autobot,
+                          type: .classic)
 
 let rtt02 = CharacterCard(name: "Ironhide",
                           description: "Veteran Autobot",
@@ -57,7 +73,8 @@ let rtt02 = CharacterCard(name: "Ironhide",
                           classes: [.botMode: ["Ranged"],
                                     .altMode: ["Truck", "Melee"]],
                           starCount: 6,
-                          team: .autobot)
+                          team: .autobot,
+                          type: .classic)
 
 let rtt03 = CharacterCard(name: "Optimus Prime",
                           description: "Autobot Leader",
@@ -68,7 +85,8 @@ let rtt03 = CharacterCard(name: "Optimus Prime",
                           classes: [.botMode: ["Leader", "Ranged"],
                                     .altMode: ["Leader", "Truck", "Ranged"]],
                           starCount: 7,
-                          team: .autobot)
+                          team: .autobot,
+                          type: .classic)
 
 let rtt04 = CharacterCard(name: "Red Alert",
                           description: "Security Chief",
@@ -79,7 +97,8 @@ let rtt04 = CharacterCard(name: "Red Alert",
                           classes: [.botMode: ["Ranged"],
                                     .altMode: ["Car", "Ranged"]],
                           starCount: 6,
-                          team: .autobot)
+                          team: .autobot,
+                          type: .classic)
 
 let characters = [rtt01, rtt02, rtt03, rtt04]
 
