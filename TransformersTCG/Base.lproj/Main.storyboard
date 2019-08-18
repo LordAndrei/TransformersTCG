@@ -28,13 +28,23 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <state key="normal" title="Character Cards"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1P-ue-MqM">
+                                <rect key="frame" x="368.5" y="132" width="287" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Deal CharacterCards"/>
+                                <connections>
+                                    <action selector="hitDealCharacterCards:" destination="9nj-lE-kek" eventType="touchUpInside" id="qES-jh-QUf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3J7-g9-C2E" firstAttribute="centerX" secondItem="ifP-Yz-JOb" secondAttribute="centerX" id="38B-eK-mmA"/>
+                            <constraint firstItem="y1P-ue-MqM" firstAttribute="centerX" secondItem="ifP-Yz-JOb" secondAttribute="centerX" id="Dxo-ag-fMN"/>
                             <constraint firstItem="hm1-lC-cWh" firstAttribute="top" secondItem="3J7-g9-C2E" secondAttribute="bottom" constant="8" id="Mq6-am-Zl2"/>
                             <constraint firstItem="hm1-lC-cWh" firstAttribute="centerX" secondItem="ifP-Yz-JOb" secondAttribute="centerX" id="UTH-1p-882"/>
                             <constraint firstItem="3J7-g9-C2E" firstAttribute="top" secondItem="ifP-Yz-JOb" secondAttribute="top" constant="20" id="V0R-AI-fAQ"/>
+                            <constraint firstItem="y1P-ue-MqM" firstAttribute="top" secondItem="hm1-lC-cWh" secondAttribute="bottom" constant="8" id="s6H-JV-lM8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ifP-Yz-JOb"/>
                     </view>
