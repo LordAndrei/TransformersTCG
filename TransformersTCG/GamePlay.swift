@@ -16,6 +16,19 @@ class PlayerCharacterCard {
     var currentMode: CharacterModes = .altMode
 }
 
+extension PlayerCharacterCard: CustomStringConvertible {
+    var description: String {
+        var returnString = ""
+        returnString += "card: \(card)\n"
+        returnString += "isTapped: \(isTapped)\n"
+        returnString += "damageCounters: \(damageCounters)\n"
+        returnString += "currentMode: \(currentMode)\n"
+        return returnString
+    }
+    
+    
+}
+
 extension PlayerCharacterCard: Hashable {
     static func == (lhs: PlayerCharacterCard, rhs: PlayerCharacterCard) -> Bool {
         return lhs.card.name == rhs.card.name
@@ -31,7 +44,13 @@ extension PlayerCharacterCard: Hashable {
 class Player {
     var characterCards:Array<PlayerCharacterCard> = []
 }
-
+extension Player: CustomStringConvertible {
+    var description: String {
+        return "characterCards: \(characterCards)"
+    }
+    
+    
+}
 class GamePlay {
     var gamePlayers:[Player] = []
     
