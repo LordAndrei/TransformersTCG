@@ -10,10 +10,14 @@ import Foundation
 
 // MARK: - Classes
 class PlayerCharacterCard {
-    var card: CharacterCard!
+    var card: CharacterCard
     var isTapped: Bool = false
     var damageCounters: Int = 0
     var currentMode: CharacterModes = .altMode
+  
+  init(card: CharacterCard) {
+    self.card = card
+  }
 }
 
 extension PlayerCharacterCard: CustomStringConvertible {
@@ -42,7 +46,7 @@ extension PlayerCharacterCard: Hashable {
 }
 
 class Player {
-    var characterCards:Array<PlayerCharacterCard> = []
+    var characterCards:Set<PlayerCharacterCard> = []
 }
 extension Player: CustomStringConvertible {
     var description: String {
@@ -69,9 +73,9 @@ class GamePlay {
             var starCountTotal = 0
             for card in setOfCharacterCards {
                 // make a player characterCard
-                let aPlayerCharacterCard = PlayerCharacterCard()
+              let aPlayerCharacterCard = PlayerCharacterCard(card: card)
                 // add it to the player's bucket of player playing Cards
-              aPlayer.characterCards.append(aPlayerCharacterCard)
+                aPlayer.characterCards.insert(aPlayerCharacterCard)
                 
               print("Name: \(card.name)")
                 starCountTotal += card.starCount
